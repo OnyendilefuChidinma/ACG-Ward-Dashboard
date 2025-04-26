@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ACG | Dashboard</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/3d02cf7ada.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/vendor/animate-css/vivify.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/c3/c3.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/chartist/css/chartist.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css" />
+  <link rel="stylesheet" href="../light/assets/css/site.min.css" />
+  <link rel="stylesheet" href="../Dashboard-ward/CSS/dashboard.css" />
+  <link rel="stylesheet" href="../Dashboard-ward/CSS/members.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="theme-green">
+  <div class="overlay"></div>
+  <div id="wrapper">
+
+    <input type="checkbox" name="check" id="check">
+    <label for="check">
+      <i class="fa-solid fa-circle-chevron-right open-icon" id="open-icon"></i>
+      <i class="fa-solid fa-circle-chevron-left close-icon" id="close-icon"></i>
+    </label>
+
+    <div class="overlay1"></div>
+    <nav class="navbar navbar-fixed-top position-fixed top-0 px-2">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <div class="navbar-brand">
+            <a class="small_menu_btn" href="javascript:void(0);"><img style="width: 30px"
+                src="../light/image/logo-removebg-preview.png" alt="Logo" /></a>
+            <a href="index.html"><span><img style="width: 50px" src="./image/ACG-removebg-preview(1).png"
+                  alt="" /></span></a>
+          </div>
+          <form id="navbar-search" class="navbar-form search-form">
+            <input value class="form-control" placeholder="Search here..." type="text" />
+            <button type="button" class="btn btn-default">
+              <i class="icon-magnifier"></i>
+            </button>
+          </form>
+        </div>
+        <div class="navbar-right">
+          <div id="navbar-menu">
+            <ul class="nav navbar-nav d-flex flex-row align-items-center">
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                  <i class="fa fa-envelope"></i>
+                  <span class="notification-dot bg-green"></span>
+                </a>
+                <ul class="dropdown-menu right_chat email vivify fadeIn position-absolute">
+                  <li class="header">You have 4 New eMail</li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="media">
+                        <div class="avtar-pic w35 lbg-indigo">
+                          <span>FC</span>
+                        </div>
+                        <div class="media-body">
+                          <span class="name">Folisise Chosielie
+                            <small class="float-right">12min ago</small></span>
+                          <span class="message">New Messages</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="media">
+                        <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt />
+                        <div class="media-body">
+                          <span class="name">Louis Henry
+                            <small class="float-right">38min ago</small></span>
+                          <span class="message">Integer ante arcu, accumsan a, consectetuer eget,
+                            posuere ut, mauris.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="media">
+                        <div class="avtar-pic w35 lbg-red">
+                          <span>FC</span>
+                        </div>
+                        <div class="media-body">
+                          <span class="name">James Wert
+                            <small class="float-right">Just now</small></span>
+                          <span class="message">It is a long established fact that a reader will
+                            be distracted</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="media">
+                        <div class="avtar-pic w35 lbg-green">
+                          <span>FC</span>
+                        </div>
+                        <div class="media-body">
+                          <span class="name">James Wert
+                            <small class="float-right">Just now</small></span>
+                          <span class="message">The point of using Lorem Ipsum is that it has a
+                            more</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="media mb-0">
+                        <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt />
+                        <div class="media-body">
+                          <span class="name">Debra Stewart
+                            <small class="float-right">2hr ago</small></span>
+                          <span class="message">Nullam vel sem. Nullam vel sem.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                  <i class="fa fa-bell"></i>
+                  <span class="notification-dot bg-azura"></span>
+                </a>
+                <ul class="dropdown-menu feeds_widget vivify fadeIn position-absolute">
+                  <li class="header">You have 4 New Notifications</li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="feeds-left lbg-red">
+                        <i class="fa fa-check"></i>
+                      </div>
+                      <div class="feeds-body">
+                        <h4 class="title text-danger">
+                          Issue Fixed
+                          <small class="float-right text-muted">9:10 AM</small>
+                        </h4>
+                        <small>WE have fix all Design bug with Responsive</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="feeds-left lbg-info">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <div class="feeds-body">
+                        <h4 class="title text-info">
+                          New User
+                          <small class="float-right text-muted">9:15 AM</small>
+                        </h4>
+                        <small>I feel great! Thanks team</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="feeds-left lbg-orange">
+                        <i class="fa fa-question-circle"></i>
+                      </div>
+                      <div class="feeds-body">
+                        <h4 class="title text-warning">
+                          Server Warning
+                          <small class="float-right text-muted">9:17 AM</small>
+                        </h4>
+                        <small>Your connection is not private</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="feeds-left lbg-green">
+                        <i class="fa fa-thumbs-o-up"></i>
+                      </div>
+                      <div class="feeds-body">
+                        <h4 class="title text-success">
+                          2 New Feedback
+                          <small class="float-right text-muted">9:22 AM</small>
+                        </h4>
+                        <small>It will give a smart finishing to your site</small>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Profile Image with Dropdown -->
+              <div class="dropdown profile-sec">
+                <div class="d-flex align-items-center cursor-pointer" id="profileDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img
+                    src="https://res.cloudinary.com/du2rjnoya/image/upload/v1701288342/OTS-cohort-13/blackman3_bhn1a5.jpg"
+                    alt="Profile" class="rounded-circle profile-image">
+                  <i class="fa fa-chevron-down ms-1 text-secondary small"></i>
+                </div>
+
+                <ul class="dropdown-menu dropdown-menu-end position-absolute" aria-labelledby="profileDropdown">
+                  <li>
+                    <h3 class="dropdown-header fs-5 fw-bold text-success">Username</h3>
+                    <p class="dropdown-header text-secondary">Common@gmail.com</p>
+                  </li>
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="text-danger log-out">
+                    <a href="page-login.html" class="icon-menu dropdown-item text-danger"> <span class="me-2"><i
+                          class="fa fa-power-off"></i></span>Logout</a>
+                  </li>
+                </ul>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="left-sidebar" class="sidebar left-sidebar py-4">
+      <div class="sidebar_list">
+        <div class="tab-content" id="main-menu">
+          <div class="tab-pane active" id="Home-icon">
+            <nav class="sidebar-nav sidebar-scroll">
+              <ul class="metismenu">
+
+                <li class="active">
+                  <a href="#"><i class="icon-speedometer"></i><span>Dashboard</span></a>
+                </li>
+                <li class="header mt-1"></li>
+
+                <li class="">
+                  <a href="members.html" class="d-flex align-items-center">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Member Management</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="pu-agents.html">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>PU Agents Management</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="pu-manage.html">
+                    <i class="fa-regular fa-map"></i>
+                    <span>PU Management</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="profile.html">
+                    <i class="icon-user"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="page-profile.html">
+                    <i class="icon-user"></i>
+                    <span>Profile</span></a>
+                </li>
+                <li>
+                  <a href="ireport.html">
+                    <i class="icon-user"></i>
+                    <span>iReport</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" class="main-container">
+
+      <!-- PAGE DESCRIPTION HEADER SECTION -->
+      <div class=" block-header py-4 ">
+        <div class="row clearfix d-flex justify-content-between mt-3">
+          <div class="col mb-3">
+            <h1 class="text-sm-nowrap">
+              <span class="fw-bold">Ward Name:</span>
+              <span class="fw-medium">Ward Coordinator Dashboard</span>
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mt-3">
+                <li class="breadcrumb-item">
+                  <a href="#"><i class="fa fa-cube" aria-hidden="true"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Dashboard
+                </li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="text-left mt-0 mt-sm-0 col-sm-auto">
+            <p class="mb-0">
+              <span>Role:</span>
+              <span class="badge rounded-pill fw-medium bg-success-subtle text-dark p-2 border-0 me-0">Ward
+                Coordinator</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid">
+
+        <div class="row clearfix">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="body">
+                <div class="w_summary">
+                  <div class="s_chart">
+                    <span class="card-icons">
+                      <i class="fa-solid fa-people-group"></i>
+                    </span>
+                  </div>
+                  <div class="s_detail">
+                    <h2 class="font500 mb-2">5.3M</h2>
+                    <span class="fs-">Total Members</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-first">
+              <div class="body">
+                <div class="w_summary">
+                  <div class="s_chart">
+                    <span class="card-icons">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </span>
+                  </div>
+                  <div class="s_detail">
+                    <h2 class="font500 mb-2">5.3M</h2>
+                    <span>Total Polling Units</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="body">
+                <div class="w_summary">
+                  <div class="s_chart">
+                    <span class="card-icons">
+                      <i class="fa-solid fa-users"></i>
+                    </span>
+                  </div>
+                  <div class="s_detail">
+                    <h2 class="font500 mb-2">5.3M</h2>
+                    <span>Active P U Agents</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card">
+              <div class="body">
+                <div class="w_summary">
+                  <div class="s_chart">
+                    <span class="card-icons">
+                      <i class="fa-solid fa-person-circle-check"></i>
+                    </span>
+                  </div>
+                  <div class="s_detail">
+                    <h2 class="font500 mb-2">5.3M</h2>
+                    <span>Pending Approval</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-6">
+            <div class="card">
+              <div class="header">
+                <h2>Growth In Membership Over Time</h2>
+                <ul class="header-dropdown dropdown">
+                  <li>
+                    <a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:void(0);">Weekly</a></li>
+                      <li>
+                        <a href="javascript:void(0);">Monthly</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Yearly</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="body">
+                <canvas id="lineChart" class="w-100 h-100"></canvas>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="card">
+              <div class="header">
+                <h2>Number Of Members Per Wards</h2>
+                <ul class="header-dropdown dropdown">
+                  <li>
+                    <a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:void(0);">Weekly</a></li>
+                      <li>
+                        <a href="javascript:void(0);">Monthly</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Yearly</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="body">
+                <canvas id="barChart" class="w-100 h-100"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row clearfix">
+          <div class="col-lg-12 col-md-12">
+            <div class="card">
+              <div class="header">
+                <h2>Distribution of Polling Unit Agents across Ward.</h2>
+                <ul class="header-dropdown dropdown">
+                  <li>
+                    <a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:void(0);">Weekly</a></li>
+                      <li>
+                        <a href="javascript:void(0);">Monthly</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Yearly</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="body" style="max-height: 320px; width: 100%;">
+                <canvas id="pieChart" class="pie1"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Members List Table Section -->
+        <div class="row clearfix">
+          <div class="col-12 col-sm-12">
+            <div class="card">
+              <div class="header d-flex justify-content-between align-items-center">
+                <h2>Recent Approved Members</h2>
+                <form id="table-searchbar" class="navbar-form search-form d-flex">
+                  <input value class="form-control" placeholder="Search name..." type="text" />
+                  <button type="button" class="btn btn-default search-btn">
+                    <i class="icon-magnifier"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="table-responsive table1">
+
+                <table class="table table-custom spacing5 mb-0 px-3">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>ID No</th>
+                      <th>Full Name</th>
+                      <th>Email Address</th>
+                      <th>Gender</th>
+                      <th>Polling Unit</th>
+                      <th>View Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>02</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>03</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>04</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>05</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>06</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>07</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>08</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>09</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>10</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>11</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td>12</td>
+                      <td>PU-1234567890</td>
+                      <td>Ken Kenneth</td>
+                      <td>Ken@gmail.com</td>
+                      <td>Male</td>
+                      <td>Polling Unit 02</td>
+                      <td>
+                        <a href="#"><span class="btn btn-outline-success  rounded-3 py-1 px-3" data-bs-toggle="modal" data-bs-target="#memberDetailsModal">view</span></a>
+                      </td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+
+              </div>
+              <!-- Table Pagination -->
+              <nav aria-label="Page navigation example" class="mt-3 px-3">
+                <ul class="pagination">
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0);">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0);" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Member Details Modal -->
+            <div class="modal fade" id="memberDetailsModal" tabindex="-1" aria-labelledby="memberDetailsModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-container">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="memberDetailsModalLabel">Member Profile</h5>
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-0">
+
+                            <!-- Member Details Section -->
+                            <div
+                                class="row member-details d-flex flex-row gap-0 justify-content-between align-items-center rounded-4">
+                                <div class="col-sm-3 member-profile">
+                                    <img src="https://res.cloudinary.com/dmhuollsd/image/upload/v1745528789/youngman_svnkiz.png"
+                                        alt="Member Profile Image" class="img-fluid member-image object-fit-cover rounded-4 mb-4">
+                            
+                                </div>
+                                <div class="col-sm-9 text-right-sec">
+                            
+                                    <div class="top-sec d-flex gap-2 justify-content-between align-items-center mb-3 flex-wrap">
+                                        <h5 class="member-name fw-bold mb-0 text-nowrap">John Timothy Doe</h5>
+                                        <p class="d-flex align-items-center mb-0">Status: <span
+                                                class="ms-2 badge rounded-5 fw-medium bg-success-subtle text-dark px-3 py-2 border-0">Active</span></p>
+                                    </div>
+                            
+                                    <div class="member-info">
+                                        <div>
+                                            <p class="member-id"><span class="fw-bold">ID No:</span> PU-123456789</p>
+                                            <p class="member-email"><span class="fw-bold">Email:</span> 1tH0R@example.com</p>
+                                            <p class="member-phone"><span class="fw-bold">Phone:</span> +1234567890</p>
+                                            <p class="member-gender"><span class="fw-bold">Gender:</span> Male</p>
+                                            <p class="member-dob"><span class="fw-bold">DOB:</span> 1990-01-01</p>
+                                        </div>
+                            
+                                        <div>
+                                            <p class="member-role"><span class="fw-bold">Role:</span> Member</p>
+                                            <p class="member-state"><span class="fw-bold">State:</span> Adamawa</p>
+                                            <p class="member-lga"><span class="fw-bold">L.G.A:</span> Adamawa North</p>
+                                            <p class="member-ward"><span class="fw-bold">Ward:</span> Ward 1</p>
+                                            <p class="member-ward"><span class="fw-bold">P Unit:</span> Polling Unit 1</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="sec-btns d-flex flex-row gap-3 mt-2 flex-wrap">
+                                        <button type="button" class="btn bg-primary-subtle text-primary fw-medium">
+                                            <span class="me-1">
+                                                <i class="fa-regular fa-pen-to-square"></i>
+                                            </span> Edit
+                                        </button>
+                                        <button type="button" class="btn bg-secondary-subtle text-secondary fw-medium">
+                                            <span class="me-1">
+                                                <i class="fa-regular fa-envelope"></i>
+                                            </span> Send Mail
+                                        </button>
+                                        <button type="button" class="btn bg-warning-subtle text-dark fw-medium">
+                                            <span class="me-1">
+                                                <i class="fa-solid fa-strikethrough"></i>
+                                            </span> Suspend
+                                        </button>
+                                        <button type="button" class="btn bg-danger-subtle text-danger fw-medium">
+                                            <span class="me-1">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                            </span> Delete
+                                        </button>
+                                    </div>
+                            
+                                </div>
+                            
+                            </div>
+                            <!-- Member Details Section End -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+  </div>
+
+  <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../light/assets/bundles/vendorscripts.bundle.js"></script>
+  <script src="../light/assets/bundles/c3.bundle.js"></script>
+  <script src="../light/assets/bundles/flotscripts.bundle.js"></script>
+  <script src="../light/assets/bundles/knob.bundle.js"></script>
+  <script src="../light/assets/js/common.js"></script>
+  <script src="../light/assets/js/index.js"></script>
+  <script src="../Dashboard-ward/JS/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    (function () {
+      function c() {
+        var b = a.contentDocument || a.contentWindow.document;
+        if (b) {
+          var d = b.createElement('script');
+          d.innerHTML =
+            "window.__CF$cv$params={r:'899721ba1ab86ec1',t:'MTcxOTM0MTMwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/c7e29c8c8b6e/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+          b.getElementsByTagName('head')[0].appendChild(d);
+        }
+      }
+      if (document.body) {
+        var a = document.createElement('iframe');
+        a.height = 1;
+        a.width = 1;
+        a.style.position = 'absolute';
+        a.style.top = 0;
+        a.style.left = 0;
+        a.style.border = 'none';
+        a.style.visibility = 'hidden';
+        document.body.appendChild(a);
+        if ('loading' !== document.readyState) c();
+        else if (window.addEventListener)
+          document.addEventListener('DOMContentLoaded', c);
+        else {
+          var e = document.onreadystatechange || function () { };
+          document.onreadystatechange = function (b) {
+            e(b);
+            'loading' !== document.readyState &&
+              ((document.onreadystatechange = e), c());
+          };
+        }
+      }
+    })();
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const lineCtx = document.getElementById("lineChart").getContext("2d");
+      new Chart(lineCtx, {
+        type: "line",
+        data: {
+          labels: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          datasets: [
+            {
+              label: "Registered Members",
+              data: [300, 450, 320, 540, 480, 600, 750],
+              borderColor: "rgba(75, 192, 192, 1)",
+              backgroundColor: "rgba(75, 192, 192, 0.2)",
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true,
+              position: "top",
+              labels: {
+                boxWidth: 24,
+                padding: 0,
+                font: {
+                  size: 16,
+                },
+                color: "black",
+              },
+            },
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  size: 12, // 👈 Increase font size here
+                },
+                color: "black", // Optional: make the labels more visible
+              },
+            },
+            y: {
+              ticks: {
+                font: {
+                  size: 12, // Optional: increase Y-axis label size
+                },
+                color: "black",
+              },
+            },
+          },
+        },
+      });
+    });
+
+  </script>
+</body>
+
+</html>
